@@ -19,7 +19,7 @@ const Hero = () => {
     const [review, setReview] = useState(``);
 
     async function reviewCode() {
-        const responce = await axios.post('http://localhost:3000/ai/get-review', { code });
+        const responce = await axios.post('https://code-reviewer-t32d.onrender.com/ai/get-review', { code });
         setReview(responce.data);
     }
 
